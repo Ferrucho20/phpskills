@@ -2,6 +2,8 @@
 include('conexion.php');
 $consulta = 'select * from usuarios';
 $resultado = mysqli_query($conexion,$consulta);
+/*Esa es la sintaxis heredoc. Comienza una cadena heredoc poniendo <<<más un token de su elección, y termina poniendo solo el token (¡y nada más!) En una nueva línea.
+*Para su comodidad, hay una excepción: puede agregar un punto y coma después del delimitador final.*/
 $tabla =<<<FIN
 <table>
 <tr><th>Nombres</th><th>Apellido paterno</th><th>Apellido materno</th><th>Correo</th><th colspan="2">Accion</th></tr>
